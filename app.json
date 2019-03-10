@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Altinão App",
-    "slug": "altinao_app_react-native",
+    "slug": "altinao_app_react_native",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [

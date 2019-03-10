@@ -1,19 +1,71 @@
 import React from 'react';
 import {
-  Image,
-  Platform,
-  ScrollView,
-  StyleSheet,
   Text,
   TouchableOpacity,
   View,
+  FlatList
 } from 'react-native';
-import { WebBrowser } from 'expo';
 
-import { MonoText } from '../components/StyledText';
+
+import api from "../services/api";
+import Styles from '../constants/Styles';
 
 export default class JogosScreen extends React.Component {
-  static navigationOptions = {
+    static navigationOptions = {
+        title: "Jogos"
+    };
+
+    constructor(props){
+        super(props);
+        this.state = {
+            docs: [],
+        }
+    };
+
+    componentDidMount() {
+        this.loadProducts();
+    }
+
+    loadProducts = async () => {
+        const response = await api.get('/games');
+        const { data } = response;
+        this.setState({
+            docs: data
+        });
+
+    };
+
+    renderItem = ({ item }) => (
+        <View style={Styles.containerInJogos}>
+          <Text style={Styles.titleJogos}>{item.data}</Text>
+          <Text style={Styles.descriptionJogos}>{item.time_casa} {item.placar_casa} x {item.placar_visitante} {item.time_visitante}</Text>
+
+          <TouchableOpacity
+              style={Styles.buttonJogos} onPress={() => {
+              this.props.navigation.navigate('Goals', { jogo: item });
+          }}
+          >
+            <Text style={Styles.buttonTextJogos}>Gols</Text>
+          </TouchableOpacity>
+        </View>
+    )
+
+
+    render(){
+        return (
+            <View style={Styles.containerJogos}>
+              <FlatList
+                  contentContainerStyle={Styles.listJogos}
+                  data={this.state.docs}
+                  keyExtractor={item => item.id_jogo.toString()}
+                  renderItem={this.renderItem}
+              />
+            </View>
+        );
+    }
+}
+
+  /*static navigationOptions = {
     header: null,
   };
 
@@ -185,4 +237,4 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#2e78b7',
   },
-});
+});*/

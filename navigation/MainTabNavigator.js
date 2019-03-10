@@ -4,14 +4,17 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 
 import TabBarIcon from '../components/TabBarIcon';
 import JogosScreen from '../screens/JogosScreen';
-import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import TabelaScreen from '../screens/TabelaScreen';
+import ArtilhariaScreen from '../screens/ArtilhariaScreen';
+import GoalsScreen from '../screens/GoalsScreen';
+import TimesScreen from '../screens/TimesScreen';
 
-const HomeStack = createStackNavigator({
+const JogosStack = createStackNavigator({
   Jogos: JogosScreen,
+    Goals: GoalsScreen,
 });
 
-HomeStack.navigationOptions = {
+JogosStack.navigationOptions = {
   tabBarLabel: 'Jogos',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
@@ -25,36 +28,51 @@ HomeStack.navigationOptions = {
   ),
 };
 
-const LinksStack = createStackNavigator({
-  Links: LinksScreen,
+const TabelaStack = createStackNavigator({
+  Tabela: TabelaScreen,
 });
 
-LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+TabelaStack.navigationOptions = {
+  tabBarLabel: 'Tabela',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
+      name={Platform.OS === 'ios' ? 'ios-reorder' : 'md-reorder'}
     />
   ),
 };
 
-const SettingsStack = createStackNavigator({
-  Settings: SettingsScreen,
+const ArtilhariaStack = createStackNavigator({
+  Artilharia: ArtilhariaScreen,
 });
 
-SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
+ArtilhariaStack.navigationOptions = {
+  tabBarLabel: 'Artilharia',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'}
+      name={Platform.OS === 'ios' ? 'ios-football' : 'md-football'}
     />
   ),
+};
+
+const TimesStack = createStackNavigator({
+    Times: TimesScreen,
+});
+
+TimesStack.navigationOptions = {
+    tabBarLabel: 'Times',
+    tabBarIcon: ({ focused }) => (
+        <TabBarIcon
+            focused={focused}
+            name={Platform.OS === 'ios' ? 'ios-people' : 'md-people'}
+        />
+    ),
 };
 
 export default createBottomTabNavigator({
-  HomeStack,
-  LinksStack,
-  SettingsStack,
+  JogosStack,
+  TabelaStack,
+  ArtilhariaStack,
+  TimesStack
 });
