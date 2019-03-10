@@ -42,7 +42,7 @@ export default class JogosScreen extends React.Component {
 
           <TouchableOpacity
               style={Styles.buttonJogos} onPress={() => {
-              this.props.navigation.navigate('Goals', { jogo: item });
+              this.props.navigation.navigate('Gols', { jogo: item });
           }}
           >
             <Text style={Styles.buttonTextJogos}>Gols</Text>

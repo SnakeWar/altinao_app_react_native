@@ -38,19 +38,18 @@ export default class TimesScreen extends React.Component {
 
     renderItem = ({ item }) => (
         <View style={Styles.containerInJogos}>
-            <Text style={Styles.titleJogos}>{item.sigla}</Text>
+            <Image source={{uri: 'http://192.168.100.116/imagens/barsemlona.png'}}/>
             <Text style={Styles.descriptionJogos}>{item.nome}</Text>
 
             <TouchableOpacity
                 style={Styles.buttonJogos} onPress={() => {
-                this.props.navigation.navigate('Jogadores', { jogodores: item });
+                this.props.navigation.navigate('Jogadores', { time: item });
             }}
             >
                 <Text style={Styles.buttonTextJogos}>Ver Jogadores</Text>
             </TouchableOpacity>
         </View>
     )
-
 
     render(){
         return (

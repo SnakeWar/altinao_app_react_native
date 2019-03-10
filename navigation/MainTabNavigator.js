@@ -6,16 +6,19 @@ import TabBarIcon from '../components/TabBarIcon';
 import JogosScreen from '../screens/JogosScreen';
 import TabelaScreen from '../screens/TabelaScreen';
 import ArtilhariaScreen from '../screens/ArtilhariaScreen';
-import GoalsScreen from '../screens/GoalsScreen';
+import GolsScreen from '../screens/GolsScreen';
+import JogadoresScreen from '../screens/JogadoresScreen';
 import TimesScreen from '../screens/TimesScreen';
 
 const JogosStack = createStackNavigator({
   Jogos: JogosScreen,
-    Goals: GoalsScreen,
+    Gols: GolsScreen,
+    Jogadores: JogadoresScreen
 });
 
 JogosStack.navigationOptions = {
   tabBarLabel: 'Jogos',
+    swipeThreshold: true,
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}

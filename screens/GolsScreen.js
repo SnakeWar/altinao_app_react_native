@@ -5,7 +5,7 @@ import React from "react";
 import {FlatList, Text, View} from "react-native";
 import Styles from '../constants/Styles';
 
-export default class GoalsScreen extends React.Component {
+export default class GolsScreen extends React.Component {
 
 constructor(props){
     super(props);
@@ -74,7 +74,7 @@ render(){
 }
 }
 
-GoalsScreen.navigationOptions = ({ navigation }) => ({
+GolsScreen.navigationOptions = ({ navigation }) => ({
     title: navigation.state.params.jogo.sigla_casa +
     " " + navigation.state.params.jogo.placar_casa +
     " x " + navigation.state.params.jogo.placar_visitante +
