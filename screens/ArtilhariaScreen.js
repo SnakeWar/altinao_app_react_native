@@ -1,6 +1,5 @@
 import React from 'react';
-import { ScrollView, StyleSheet, View, Text, FlatList } from 'react-native';
-import { ExpoLinksView } from '@expo/samples';
+import { ImageBackground, View, Text, FlatList } from 'react-native';
 import api from "../services/api";
 import Styles from '../constants/Styles';
 
@@ -48,6 +47,7 @@ export default class ArtilhariaScreen extends React.Component {
     render(){
         return (
             <View style={Styles.container}>
+                <ImageBackground source={require('../images/jogador1.jpg')} style={{width: '100%', height: '100%'}}>
               <View style={Styles.titleContainer}>
                 <View style={Styles.item}>
                   <Text style={Styles.title}>Jogador</Text>
@@ -62,6 +62,7 @@ export default class ArtilhariaScreen extends React.Component {
                   keyExtractor={item => item.id.toString()}
                   renderItem={this.renderItem}
               />
+                </ImageBackground>
             </View>
         );
     }

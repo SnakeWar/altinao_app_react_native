@@ -6,10 +6,6 @@ import {StyleSheet} from 'react-native';
 
 const Styles = StyleSheet.create({
     container: {
-        backgroundColor: "#FFF",
-        flex: 1,
-        paddingLeft: 20,
-        paddingRight: 20,
     },
     list: {
 
@@ -19,19 +15,19 @@ const Styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 5,
         borderColor: "#DDD",
-        paddingBottom: 12,
-        paddingLeft: 20,
-        paddingTop: 12,
-        marginBottom: 5,
+        padding: 10,
+        margin: 10,
+        opacity: 0.9
     },
     titleContainer: {
         flexDirection: 'row',
+        backgroundColor: "#FFF",
+        borderWidth: 1,
+        borderRadius: 5,
         marginBottom: 5,
-        marginTop: 5,
-        paddingRight: 20,
-        paddingLeft: 20,
-        paddingBottom: 10,
-        paddingTop: 10,
+        padding: 10,
+        margin: 10,
+        opacity: 0.9
     },
     title: {
         fontWeight: 'bold',
@@ -42,24 +38,24 @@ const Styles = StyleSheet.create({
         flex: 1,
         alignItems: 'stretch',
     },
+
+
+
+
     listJogos: {
         marginTop: 10,
     },
     containerJogos: {
-        backgroundColor: "#FFF",
-        borderWidth: 1,
-        borderColor: "#DDD",
-        borderRadius: 5,
-        paddingRight: 20,
-        paddingLeft: 20,
+
     },
     containerInJogos:{
         backgroundColor: "#FFF",
         borderWidth: 1,
         borderColor: "#DDD",
         borderRadius: 5,
-        padding: 20,
-        marginBottom: 20,
+        padding: 10,
+        margin: 10,
+        opacity: 0.9
     },
     descriptionJogos: {
         fontSize: 18,
@@ -68,8 +64,9 @@ const Styles = StyleSheet.create({
         fontWeight: "bold",
     },
     titleJogos: {
-        fontSize: 15,
-        color: "#999",
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: "#333",
         marginTop: 5,
         lineHeight: 24,
         paddingBottom: 10,

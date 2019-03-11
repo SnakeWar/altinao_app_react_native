@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Text,
+    ImageBackground,
   TouchableOpacity,
   View,
   FlatList
@@ -54,12 +55,14 @@ export default class JogosScreen extends React.Component {
     render(){
         return (
             <View style={Styles.containerJogos}>
+                <ImageBackground source={require('../images/bg1.jpg')} style={{width: '100%', height: '100%'}}>
               <FlatList
                   contentContainerStyle={Styles.listJogos}
                   data={this.state.docs}
                   keyExtractor={item => item.id_jogo.toString()}
                   renderItem={this.renderItem}
               />
+                </ImageBackground>
             </View>
         );
     }

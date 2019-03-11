@@ -1,11 +1,16 @@
 import React from 'react';
-import { ScrollView, StyleSheet, View, Text, FlatList } from 'react-native';
-import { ExpoLinksView } from '@expo/samples';
+import {
+    View,
+    Text,
+    FlatList,
+    ImageBackground
+} from 'react-native';
 import api from "../services/api";
 import Styles from '../constants/Styles';
+
 export default class TabelaScreen extends React.Component {
     static navigationOptions = {
-        title: "Tabela"
+        title: "Tabela",
     };
 
     constructor(props){
@@ -59,6 +64,7 @@ export default class TabelaScreen extends React.Component {
     render(){
         return (
             <View style={Styles.container}>
+                <ImageBackground source={require('../images/bg3.jpg')} style={{width: '100%', height: '100%'}}>
                 <View style={Styles.titleContainer}>
                     <View style={Styles.item}>
                         <Text style={Styles.title}>Time</Text>
@@ -85,6 +91,7 @@ export default class TabelaScreen extends React.Component {
                   keyExtractor={item => item.id.toString()}
                   renderItem={this.renderItem}
               />
+                </ImageBackground>
             </View>
         );
     }

@@ -12,13 +12,17 @@ import TimesScreen from '../screens/TimesScreen';
 
 const JogosStack = createStackNavigator({
   Jogos: JogosScreen,
-    Gols: GolsScreen,
-    Jogadores: JogadoresScreen
-});
+    Gols: GolsScreen
+},
+    {
+        navigationOptions: {
+            backgroundColor: '#FFF'
+        }
+    });
 
 JogosStack.navigationOptions = {
   tabBarLabel: 'Jogos',
-    swipeThreshold: true,
+    backgroundColor: '#FFF',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -61,6 +65,7 @@ ArtilhariaStack.navigationOptions = {
 
 const TimesStack = createStackNavigator({
     Times: TimesScreen,
+    Jogadores: JogadoresScreen
 });
 
 TimesStack.navigationOptions = {

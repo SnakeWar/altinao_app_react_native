@@ -2,11 +2,10 @@ import React from 'react';
 import {
     Text,
     TouchableOpacity,
+    ImageBackground,
     View,
     FlatList,
-    Image
 } from 'react-native';
-
 
 import api from "../services/api";
 import Styles from '../constants/Styles';
@@ -31,16 +30,14 @@ export default class TimesScreen extends React.Component {
         const response = await api.get('/teams');
         const { data } = response;
         this.setState({
-            docs: data
+            docs: data,
         });
 
     };
 
     renderItem = ({ item }) => (
         <View style={Styles.containerInJogos}>
-            <Image source={{uri: 'http://192.168.100.116/imagens/barsemlona.png'}}/>
             <Text style={Styles.descriptionJogos}>{item.nome}</Text>
-
             <TouchableOpacity
                 style={Styles.buttonJogos} onPress={() => {
                 this.props.navigation.navigate('Jogadores', { time: item });
@@ -52,14 +49,17 @@ export default class TimesScreen extends React.Component {
     )
 
     render(){
+
         return (
             <View style={Styles.containerJogos}>
+                <ImageBackground source={require('../images/bg2.jpg')} style={{width: '100%', height: '100%'}}>
                 <FlatList
                     contentContainerStyle={Styles.listJogos}
                     data={this.state.docs}
                     keyExtractor={item => item.id.toString()}
                     renderItem={this.renderItem}
                 />
+                </ImageBackground>
             </View>
         );
     }
