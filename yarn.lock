@@ -5645,7 +5645,7 @@ react-native-cached-image@^1.4.3:
     prop-types "15.5.10"
     react-native-clcasher "1.0.0"
     react-native-fetch-blob "0.10.8"
-    url-parse "1.1.9"
+    url-parse "1.4.3"
 
 react-native-clcasher@1.0.0:
   version "1.0.0"
@@ -6888,8 +6888,8 @@ url-loader@^1.1.2:
     mime "^2.0.3"
     schema-utils "^1.0.0"
 
-url-parse@1.1.9:
-  version "1.1.9"
+url-parse@1.4.3:
+  version "1.4.3"
   resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.1.9.tgz#c67f1d775d51f0a18911dd7b3ffad27bb9e5bd19"
   integrity sha1-xn8dd11R8KGJEd17P/rSe7nlvRk=
   dependencies:

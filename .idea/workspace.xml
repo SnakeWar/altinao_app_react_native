@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a03eab-d691-4d46-a3b2-69ca330ab01d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bg1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bg2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bg3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jogador1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/nike.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constants/Styles.js" afterPath="$PROJECT_DIR$/constants/Styles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navigation/MainTabNavigator.js" afterPath="$PROJECT_DIR$/navigation/MainTabNavigator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screens/ArtilhariaScreen.js" afterPath="$PROJECT_DIR$/screens/ArtilhariaScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screens/JogosScreen.js" afterPath="$PROJECT_DIR$/screens/JogosScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screens/TabelaScreen.js" afterPath="$PROJECT_DIR$/screens/TabelaScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screens/TimesScreen.js" afterPath="$PROJECT_DIR$/screens/TimesScreen.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,14 +51,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimesScreen.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TimesScreen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/screens/TimesScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+            <state relative-caret-position="187">
+              <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yarn.lock" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yarn.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="6892" column="50" lean-forward="false" selection-start-line="6892" selection-start-column="41" selection-end-line="6892" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,6 +114,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>url-parse</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -137,6 +140,7 @@
         <option value="$PROJECT_DIR$/screens/TabelaScreen.js" />
         <option value="$PROJECT_DIR$/navigation/MainTabNavigator.js" />
         <option value="$PROJECT_DIR$/screens/TimesScreen.js" />
+        <option value="$PROJECT_DIR$/yarn.lock" />
       </list>
     </option>
   </component>
@@ -372,7 +376,7 @@
       <workItem from="1552175058579" duration="19440000" />
       <workItem from="1552222287638" duration="6059000" />
       <workItem from="1552263453943" duration="8492000" />
-      <workItem from="1552313586101" duration="606000" />
+      <workItem from="1552313586101" duration="1398000" />
     </task>
     <task id="LOCAL-00001" summary="Feito">
       <created>1552235458770</created>
@@ -381,11 +385,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552235458770</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adicionar Background nas telas.">
+      <created>1552314393559</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552314393559</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46200000" />
+    <option name="totallyTimeSpent" value="46992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -439,7 +450,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Feito" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feito" />
+    <MESSAGE value="Adicionar Background nas telas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionar Background nas telas." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -630,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/constants/Colors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -692,6 +697,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -713,6 +719,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -819,11 +826,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/screens/TimesScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        <state relative-caret-position="187">
+          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="6892" column="50" lean-forward="false" selection-start-line="6892" selection-start-column="41" selection-end-line="6892" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
