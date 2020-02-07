@@ -23,7 +23,7 @@ loadProducts = async () => {
     const id = navigation.state.params.time.id;
     console.log(id);
     try {
-        const response = await fetch('http://192.168.100.116:8000/api/playerslist/' + id)
+        const response = await fetch('http://172.17.192.161:8000:8000/api/playerslist/' + id)
             .then(function(response) {
                 return response.json()
             })
